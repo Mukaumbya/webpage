@@ -23,6 +23,7 @@ Hello, Website!
 library(ggplot2)
 ggplot(mtcars, aes(x=cyl, y= mpg)) +
   geom_point() +
+  facet_wrap(~am) + 
   labs(x= "Number of cylinders", y = "Miles per gallon")
 ```
 
